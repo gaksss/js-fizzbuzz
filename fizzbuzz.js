@@ -30,18 +30,30 @@ let num = 30;
 //         console.log(num)
 //     }
 
-let resultat = "le resultat est ";
+// let resultat = "le resultat est ";
 
-if (num % 3 === 0){
-    resultat = resultat + "fizz";
+// if (num % 3 === 0){
+//     resultat = resultat + "fizz";
+// }
+
+// if (num % 5 === 0){
+//     resultat = resultat + "buzz";
+// }
+
+// if (num % 5 != 0 && num % 3 != 0){
+//     resultat = resultat + num
+// }
+
+// console.log(resultat)
+
+let resultat = "";
+
+if (num % 3 === 0) {
+  resultat = resultat + "fizz";
 }
 
-if (num % 5 === 0){
-    resultat = resultat + "buzz";
+if (num % 5 === 0) {
+  resultat = resultat + "buzz";
 }
 
-if (num % 5 != 0 && num % 3 != 0){
-    resultat = resultat + num
-}
-
-console.log(resultat)
+console.log(resultat || num);
